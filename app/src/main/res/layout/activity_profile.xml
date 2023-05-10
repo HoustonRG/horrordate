@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<data>
+        <variable
+            name="isDates"
+            type="com.example.horrordate.model.dateData" />
+</data>
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="12dp"
+    android:padding="8dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/pink">
+
+<ImageView
+    android:id="@+id/dateImage"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/james"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/dateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James Dean"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/dateAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="age"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/red"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+</layout>
